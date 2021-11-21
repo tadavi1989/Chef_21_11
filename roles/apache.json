@@ -1,0 +1,23 @@
+
+
+
+
+
+{
+	"name": "apache",
+	"override_attributes": {
+		"apache": {
+			"indexfile": "index.html.erb",
+			"website": {
+				"name": "Avi"
+			}
+		},
+	
+	"packages-cookbook": [
+		"python"
+	] 
+},
+	"run_list": [
+		"recipe[apache]", "recipe[packages]"
+	]
+}
